@@ -9,5 +9,7 @@ const ax = axios.create({
 });
 
 ax.defaults.withCredentials = true;
+ax.defaults.xsrfCookieName = 'csrftoken'
+ax.defaults.xsrfHeaderName = "X-CSRFToken"
 
 export default ax;

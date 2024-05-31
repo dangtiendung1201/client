@@ -5,7 +5,9 @@ const ax = axios.create({
     withCredentials: true,
     headers: {
         'Content-Type': 'application/json',
-    }
+    },
+    crossDomain: true,
+    data: {},
 });
 
 ax.defaults.withCredentials = true;
